@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+    background-image: url(https://t3.ftcdn.net/jpg/06/03/75/96/360_F_603759669_AHHhuuFp9c1z1CuGg9A7axp9py94jwzw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+
+img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.container {
+    width: 400px;
+    height: 600px;
+    text-align: center;
+    border: 3px solid rgb(9, 46, 86);
+    box-shadow: 2px 2px 20px #fff;
+    border-radius: 20px;
+}
+
+#singer,
+#song {
+    font-family: sans-serif;
+}
+
+#singer {
+    font-style: italic;
+    text-shadow: 2px 2px 15px #fff;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+}
+
+#play,
+#backward,
+#forward {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#play {
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 50%;
+    transition: 0.2s ease-in;
+}
+
+#play:hover {
+    color: #2a6bcd;
+    background-color: #fff;
+}
+
+.progressBar-container{
+    margin-top: 10px;
+    width: 100%;
+    height: 4px;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.progressBar{
+    width: 0%;
+    height: 3px;
+    border: 1px solid orange;
+    background-color: orange;
+}
+
+.time{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 300px;
+        height: 500px;
+        margin-bottom: 100px;
+    }
+
+    img {
+        width: 240px;
+        height: 240px;
+    }
+
+    #play,
+    #backward,
+    #forward {
+        font-size: 20px;
+    }
+}
+
+.rotateimage
+{
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes rotate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}

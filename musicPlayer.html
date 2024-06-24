@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="playerStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+
+        <h2 id="singer">Arjith Singh</h2>
+        <h2 id="song">O-sajni-re</h2>
+
+        <div class="myImages">
+            <img src="./IMAGES/image-1.jpg" alt="image">
+        </div>
+
+        <div class="audio">
+            <audio id="audio" src="./AUDIO/image-1.mp3"></audio>
+        </div>
+        <div class="progressBar-container">
+            <div class="progressBar" id="progressBar">
+
+            </div>
+            <div class="time">
+                <span id="currentTime">0:00</span>
+                <span id="duration">3:20</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <i class="fas fa-backward" id="backward"></i>
+            <i class="fas fa-play" id="play"></i>
+            <i class="fas fa-forward" id="forward"></i>
+        </div>
+
+    </div>
+
+
+    <script src="./musicPlayer.js"></script>
+</body>
+
+</html>
